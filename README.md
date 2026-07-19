@@ -1,6 +1,7 @@
 # Zed-Settings
 
 ```json
+
 {
   // IA / Agent: provedores de agente externos e configuração do painel do agente
   "agent_servers": {
@@ -108,11 +109,13 @@
   },
   "project_panel": {
     "dock": "left",
-    // mais espaço vertical entre as entradas (arquivos/pastas)
+    // espaçamento vertical máximo entre as entradas (arquivos/pastas), não existe opção maior
     "entry_spacing": "comfortable",
-    // sem linha de guia da árvore, só a indentação dos filhos
+    // indentação menor pros itens filhos (default do Zed é 20)
+    "indent_size": 14,
+    // com linha de guia da árvore
     "indent_guides": {
-      "show": "never",
+      "show": "always",
     },
   },
 
